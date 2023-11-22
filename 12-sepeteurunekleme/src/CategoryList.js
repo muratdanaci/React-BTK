@@ -14,7 +14,6 @@ export default class CategoryList extends Component {
       .then((response) => response.json())
       .then((data) => this.setState({ categories: data }));
   };
-
   render() {
     return (
       <div>
@@ -24,6 +23,7 @@ export default class CategoryList extends Component {
             <ListGroupItem
               onClick={() => this.props.changeCategory(category)}
               key={category.id}
+              active={category.seoUrl === this.props.currentCategory ? true : false}
             >
               {category.seoUrl}
             </ListGroupItem>
