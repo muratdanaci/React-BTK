@@ -2,3 +2,4 @@ Terminal -> npm install -g create-react-app
 
 npx create-react-app projeismi
 
+Json server calistirm -> json-server --watch db.json 
