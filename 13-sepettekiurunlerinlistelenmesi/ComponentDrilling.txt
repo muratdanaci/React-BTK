@@ -1,0 +1,3 @@
+Navigation bölgesinde olan Options kısmını component olarak kullanmak için App.js'ten Navi.js'e, oradan da CartSummary.js dosyasına aktarım yapılmalı.
+
+App.js'ten CartSummary.js dosyasına direkt aktarım yapılamaz.

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Table, Button } from "reactstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 export default class ProductList extends Component {
   render() {
@@ -28,7 +30,12 @@ export default class ProductList extends Component {
                 <td>{product.unitPrice}</td>
                 <td>{product.unitsInStock}</td>
                 <td>
-                  <Button onClick={()=>this.props.addToCart(product)} color="info">Add to Cart</Button>
+                  <Button
+                    onClick={() => this.props.addToCart(product)}
+                    color="info"
+                  >
+                    <FontAwesomeIcon icon={faCartShopping} />
+                  </Button>
                 </td>
               </tr>
             ))}
