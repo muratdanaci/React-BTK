@@ -3,3 +3,5 @@ Terminal -> npm install -g create-react-app
 npx create-react-app projeismi
 
 Json server calistirma -> apinin oldugu dizine git -> json-server --watch db.json 
+
+redux olusturma -> npm install redux, npm install react-redux
